@@ -1,0 +1,40 @@
+body{text-align:center;background-color:#e4e0ffff;}
+.header{text-align:left;}
+.navbar{background-color:#487894ff;}
+.nav-link{color:white;border-bottom:solid #487894ff 1px;}
+.navbar-brand{color:white;border-bottom:solid #487894ff 1px;}
+.nav-link:hover{color:white;border-bottom:solid white 1px;}
+.navbar-brand:hover{color:white;}
+.cart:hover{border-bottom:solid white 1px}
+.cart{border-bottom:solid #487894ff 1px;}
+.product{background-color:white; padding:5px; border:10px solid #e4e0ffff; }
+.image{margin:5px}
+.head{padding-top:10px;}
+.link{color:black}
+.button{padding:5px;margin:5px;border:2px lightgray solid}
+.button:hover{border:black 2px solid}
+#cart{text-align: left; font-size: large}
+#banner{text-align:center;
+background-image: url(Media/banner.jpg);
+background-color: #E0E0E0;
+background-blend-mode:multiply ;
+background-size: cover;
+width:100vw;
+background-repeat:no-repeat;
+background-position: center center;
+height:75vh;
+display:flex;
+aspect-ratio: 16/9;
+justify-content: center; 
+align-items: center;
+position:;}
+#sierra {text-align: center;color:white;font-size: 100px;}
+.fascinate {
+font-family: "Fascinate", system-ui;
+font-weight: 400;
+font-style: normal;}
+.home{background-color:#e4e0ffff ;}
+.purple{color:#487894ff}
+.cartbutton{padding:10px;margin:10px;border:2px lightgray solid;}
+.cartbutton:hover{border:black 2px solid;}
+.link{color:black}
