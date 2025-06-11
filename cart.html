@@ -195,10 +195,7 @@
                {list.innerHTML = "<li>Your cart is empty.</li>"}
 
             // TAXES
-             if(Object.keys(cartA).length!== 0 || 
-               Object.keys(cartS).length!== 0 ||
-                Object.keys(cartM).length!== 0 ||
-               Object.keys(cartL).length!== 0){
+                if(cartS || cartM || cartL){
                document.getElementById("totalCost").innerHTML = "Subtotal: $" + subTotal.toFixed(2);
                var tax = subTotal*0.1025;
                document.getElementById("tax2").innerHTML = "Tax: $" + tax.toFixed(2)
