@@ -160,7 +160,7 @@
                  const li = document.createElement("li");
                  li.innerHTML = cartA[key] + "x " + key + " $" + cost.toFixed(2) ;
                  list.appendChild(li);
-                 var subTotal = subTotal + cost;
+                  subTotal = subTotal + cost;
              };
              //SMALL
              for(const key in cartS){
@@ -168,7 +168,7 @@
                  const li = document.createElement("li");
                  li.innerHTML = cartS[key] + "x " + key +  " Size: Small" + " $" + cost.toFixed(2) ;
                  list.appendChild(li);
-                 var subTotal = subTotal + cost;
+                  subTotal = subTotal + cost;
              };
             
              //MEDIUM
@@ -177,7 +177,7 @@
                  const li = document.createElement("li");
                  li.innerHTML = cartM[key] + "x " + key + " Size: Medium" + " $" + cost.toFixed(2);
                  list.appendChild(li);
-                 var subTotal = subTotal + cost;
+               subTotal = subTotal + cost;
              };
              //Large
               for(const key in cartL){
@@ -185,7 +185,7 @@
                  const li = document.createElement("li");
                  li.innerHTML = cartL[key] + "x " + key  +  " Size: Large" + " $" + cost.toFixed(2) ;
                  list.appendChild(li);
-                 var subTotal = subTotal + cost;
+                  subTotal = subTotal + cost;
              };
              //EMPTY CART MESSAGE
              if(Object.keys(cartA).length== 0 && 
@@ -195,7 +195,10 @@
                {list.innerHTML = "<li>Your cart is empty.</li>"}
 
             // TAXES
-             if(cartS || cartM || cartL){
+             if(Object.keys(cartA).length!== 0 || 
+               Object.keys(cartS).length!== 0 ||
+                Object.keys(cartM).length!== 0 ||
+               Object.keys(cartL).length!== 0){
                document.getElementById("totalCost").innerHTML = "Subtotal: $" + subTotal.toFixed(2);
                var tax = subTotal*0.1025;
                document.getElementById("tax2").innerHTML = "Tax: $" + tax.toFixed(2)
